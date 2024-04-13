@@ -1,10 +1,10 @@
-const express = reqiure('express');
+const express = require('express');
 const app = express()
+const router = require('./routes')
+require('dotenv').config()
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+app.use('/api', router)
 
 app.listen(process.env.PORT, () => {
-    console.log(`Example app listening on port ${process.env.PORT}!`)
+    console.log(`app listening  http://localhost:${process.env.PORT}!`)
 })
