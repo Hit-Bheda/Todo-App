@@ -3,9 +3,13 @@ import React, { useEffect } from 'react'
 function Home(){
     useEffect(()=>{
         const getTodos = async () => {
-            const responce = await fetch('/api/todo');
-            const data = await responce.json();
-            console.log(data)
+            try {
+                const response = await fetch('/api/todo');
+                const data = await response.json();
+                console.log(data)
+            } catch (error) {
+                console.log("Error While Fetching "+error);
+            }
         }
         getTodos();
     },[])
