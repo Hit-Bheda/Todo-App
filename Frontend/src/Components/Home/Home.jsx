@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
 function Home(){
     useEffect(()=>{
-        const getTodos = async () => {
+        async function getTodo () {
             try {
-                const response = await fetch('/api/todo');
+                const response = await fetch('/');
                 const data = await response.json();
                 console.log(data)
             } catch (error) {
                 console.log("Error While Fetching "+error);
             }
         }
-        getTodos();
+        getTodo();
     },[])
   return (
     <div>

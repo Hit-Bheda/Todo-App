@@ -1,0 +1,26 @@
+{
+    "name": "Alice",
+    "age": 28,
+    "city": "New York",
+    "email": "alice@example.com",
+    "preferences": {
+      "color": "blue",
+      "food": "pizza",
+      "music_genre": "rock"
+    },
+    "friends": [
+      {
+        "name": "Bob",
+        "age": 30,
+        "city": "Los Angeles",
+        "email": "bob@example.com"
+      },
+      {
+        "name": "Charlie",
+        "age": 25,
+        "city": "Chicago",
+        "email": "charlie@example.com"
+      }
+    ]
+  }
+  
