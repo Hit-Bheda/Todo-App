@@ -2,6 +2,7 @@ const express = require('express');
 const router = express()
 
 router.get('/todo',(req,res)=>{
+    res.setHeader('Content-Type', 'application/json');
     res.status(200).json({msg:"Get to /api/todo route"})
 })
 
